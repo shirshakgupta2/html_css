@@ -1,0 +1,56 @@
+/*select first li of all ul*/
+/*li:first-child{
+	background-color: orangered;
+}
+li:last-child{
+	background-color: greenyellow;
+}
+li:nth-child(2){
+	background-color: cyans;
+
+}
+*/
+
+
+/*only-child*/
+/*li:first-child:last:child{
+	background-color: hotpink;
+}
+li:only-child{
+	background-color: hotpink;
+}*/
+/*EVEN and ODD ELEMENTS*/
+
+/*li:nth-child(2n){
+	background-color: cyan;
+}*/
+/*li:nth-child(2n+1){
+	background-color: lightgreen;
+}
+*/
+/*li:nth-child(even){
+	background-color: cyan;
+}
+li:nth-child(odd){
+	background-color: lightgreen;
+}
+*/
+/*ELEMENTS IN A RANGE*/
+/*li:nth-child(n+3):nth-child(-n+1){
+	color: red;
+}*/
+
+/*to color  the first  ul of each division*/
+/*
+div > h2:first-child + ul{this is non adaptable selector 
+	background-color: blueviolet;
+
+	
+}
+div > ul:first-of-type{
+	
+	background-color: blue;
+
+	
+}*/
+

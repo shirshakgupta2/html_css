@@ -1,0 +1,102 @@
+/*To make the background as yellow*/
+body{
+	background-color: yellow;
+	font-family: cursive;
+}
+/*Form created should be bordered*/
+form{
+	border: 2px solid black;
+}
+
+input[required]{/*through attribute selector*/
+
+	border: 2px groove violet;
+	 /*background-color: deepskyblue;*/
+
+}
+input:required{/*through UI pseudo class*/
+	border: 2x groove violet;
+	 /*background-color: deepskyblue;*/
+}
+
+/*input:not(required){Not is  UI pseudo class which has to neglect the 
+psedudo class inide brackets class 
+
+	border: 2px dashed violet;
+}*/
+input:optional{
+	border: 2px dashed violet;
+}
+
+/*input which is disabled should me bordered*/
+input:disabled{
+	border: 2px dotted violet0;
+}
+
+/*Input which is read only and can not be modified or changed*/
+input:read-only{
+	background-color: grey;
+}
+
+/*intially When we do not want p to be displayed until we apply the conditions*/
+p{
+	display: none;
+}
+
+/*As we apply the conditions for p*/
+/*<when we hover over mouse p should come in line and be in red colour>*/
+input:hover + p{  
+	display: inline;
+	font-family: monospace;
+	color: red;
+}
+
+
+input:focus{
+	background-color: silver;
+	font-family: bold;
+}
+img{
+	display: none;
+}
+input[type="email"]:focus:valid~img.valid{
+	display: inline;
+	width: 20px;
+	height: 20px;
+}
+
+input[type="email"]:focus:invalid~img.invalid {
+	display: inline;
+	width: 20px;
+	height: 20px;
+}
+
+input[type="radio"]:checked{
+	width: 20px;
+	height: 20px;
+}
+input[type="radio"]:checked+label{
+	color: darkred;
+}
+
+
+input[type="submit"]{
+	border: 2px solid voilet;
+}
+img{
+	display: none;
+
+}
+input[type="number"]:focus:in-range ~ img.validage{
+	display: inline;
+	width: 20px;
+	height: 20px;
+
+}
+
+input[type="number"]:focus:out-of-range ~ img.invalidage{
+	display: inline;
+	width: 20px;
+	height: 20px;
+
+}

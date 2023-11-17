@@ -1,0 +1,55 @@
+h1{
+	background-color: #1a331a;
+
+}
+.main{
+	background-color: #92d492;
+
+}
+.font1{
+	font-family: monospace;
+	color: ;
+	color: #66464a;
+}
+.sub{
+	background-color:#dba5e6 ;
+
+}
+.font2{
+	font-family: cursive;
+	color:#4a030a;
+}
+.end{
+	background-color:#dba5e6 ;
+
+}
+.font3{
+	font-family: fantasy;
+	color:#a1fc88;
+}
+
+a[href="https://www.google.co.in/"]{/*exact match attribute selector*/
+	background-color:#dba5e6; 
+	color: #4a030a;
+}
+a[href*="wikipedia"]{/*contains attribute selector*/
+	/*background-color: #1a331a;*/
+	color:#4a030a;
+}
+a[href ^="webd"]{/*Starts-with attribute selector*/
+	background-color: #1a331a;
+	color:#4a030a;
+
+}
+a[href$="pdf"]/*/*ends-with attribute selector*/{
+	font-family: monospace;
+	color: ;
+	color: #66464a;
+	background-color:#dba5e6 ;
+}
+div[class~="font2"]{/*space seperated attribute selector*/
+	border: #1a010a ;
+}
+h3[id|="E"]{/*  --(desh) spreated attribute selector*/
+	box-shadow: darkcyan;
+}

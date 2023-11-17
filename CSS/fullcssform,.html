@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exmp</title>
+
+	<link rel="stylesheet" type="text/css" href="fullcssform.css">
+</head>
+<body>
+	<h2>Sign up form</h2>
+		<form action="responce.html">
+			<label>Name:</label>
+			<input type="text" name="name" size="15" required>
+			<p>Emter Your Name</p><br>
+
+			<label>College:</label>
+			<input type="text" name="College"size="15" disabled>
+			<p>Enter your College Name</p><br>
+
+			<label>Email-id:</label>
+			<input type="email" name="email" size="15" required>
+			<p>Enter your Email-id</p>
+			<img class="valid" src="tickmark.jpg">
+			<img class="invalid" src="crossmark.png"><br>
+
+			<label>Confirm Email-id:</label>
+			<input  type="email" name="confirmemail" size="15">
+			<p>Re-Enter Email-id </p><br>
+
+			<label>Password:</label>
+			<input type="password" name="password" size="15" required>
+			<p>Enter your password </p><br>
+
+			<label>Gender:</label>
+			<input type="radio" value="M" name="gender" size="15"><label>Male</label>
+			<input type="radio" value="F" name="gender" size="15"><label>Female</label>
+			<input type="radio" name="gender" size="15" value="Oth"><label>Others</label><br>
+
+			<label>Age:</label>
+			<input type="number" name="age" min="18" max="60" size="15">
+			<p>PLEASE Enter age between 18 to 60</p>
+			<img class="validage" src="tickmark.jpg">
+			<img class="invalidage" src="crossmark.png"><br>
+
+			<label>MOD:</label>
+			<input type="text" name="mod" value="online" size="15" readonly>
+			<p>ONLY ONLINE MODE AVAILABLE</p><br>
+			<input type="submit" name="submit">
+		</form> 
+
+
+</body>
+</html>

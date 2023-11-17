@@ -1,0 +1,106 @@
+<h1>Course Registraion Form</h1>
+
+<form>
+	<fieldset>
+		<legend>Personal details:</legend>
+		<table>
+			<tr>
+				<td><label>First Name:</label></td>
+				<td><input type="text" name="FN" required placeholder="Roshit" size="25" maxlength="13" minlength="10"></td>
+			</tr>
+			<tr>
+				<td><label>Surname:</label></td>
+				<td><input type="text" name="SN" required placeholder="gupta" size="25" maxlength="13" minlength="10"></td>
+			</tr>
+			<tr>
+				<td><label>Mobile Number:</label></td>
+				<td><input type="text" name="MN" required placeholder="876-908-9876" size="25"></td>
+			</tr>
+			<tr>
+				<td><label>Email:</label></td>
+				<td><input type="Email" name="mail" size="25" placeholder="shirshak@gamilcom" ></td><!-- phone num is of type TEL -->
+			</tr>
+			<tr>
+				<td><label>Password:</label></td>
+				<td><input type="Password" name="password" size="25" placeholder="min 5 characters"></td>
+			</tr>
+			<tr>
+				<td><label>Confirm Password:</label></td>
+				<td><input type="Password" name="cwpassword" size="25" placeholder="min 5 characters"></td>
+			</tr>
+			<tr>
+				<td><label>DOB:</label></td>
+				<td><input type="date" name="DOB" size="25" ></td>
+			</tr>
+			<tr>
+				<td><label>Gender:</label></td>
+				<td>
+					<input type="radio" name="gender" value="M">Male
+					<input type="radio" name="gender" value="F">Female
+					<input type="radio" name="gender" value="M">Custom
+				</td>
+				
+			</tr>
+			<tr>
+				<td><label>Select Country</label></td>
+				<td>
+					<select name="Country">
+						<option value="INDIA">INDIA</option>
+						<option value="USA">USA</option>
+						<option value="CHINA">CHINA</option>
+					</select>
+				</td>
+
+			</tr>
+			<tr>
+				<td><label>Upload Picture</label></td>
+				<td>
+					<input type="file" name="picture">
+				</td>
+			</tr>
+		</table>
+		<input type="Reset" >
+
+
+	
+			<!-- <label>Gender:</label><input type="radio" name="gender" value="M">  This would have just given a button to select Only -->
+		<!-- <label>Gender:</label>
+		<input type="radio" name="gender" value="M">Male
+		<input type="radio" name="gender" value="F">Female
+		<input type="radio" name="gender" value="M">Custom<br>
+
+
+		<label>Select Country</label>
+		<select name="Country">
+			<option value="INDIA">INDIA</option>
+			<option value="USA">USA</option>
+			<option value="CHINA">CHINA</option>
+		</select><br>
+
+		<label>Upload Picture</label><input type="file" name="picture"><br>
+		<input type="Reset" name=""> -->
+		</fieldset><br>
+
+	<fieldset>
+	<legend>Course Details:</legend>
+	<label>Select Course</label>
+	<select name="Course">
+		<option value="pfs">Python fullstack</option>
+		<option value="jfs">java fullstack</option>
+		<option value="jpfs">java and pyhton fullstack</option>
+
+	</select><br>
+	<label>Delivery mode</label>
+	<input type="checkbox" name="mode1" value="online">ONLINE
+	<input type="checkbox" name="mode2" value="offline">OFFLINE
+	<br>
+	<label>Comments</label><br>
+	<textarea rows="4" cols="30"></textarea>
+
+
+</fieldset>
+
+<a href=""><img src="submit.jpg" height="75" width="75" type=
+	"input"></a>
+</form>
+

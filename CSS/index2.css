@@ -1,0 +1,24 @@
+p{
+	background-color: red;
+	color: yellow;
+	font-family: italic;
+}/* //it is elemnet selectors 
+*/
+
+*{
+
+}/* //it is a universal selectors 
+*/
+h2,h3{
+	background-color: cyan;
+	color: darkblue;
+	font-family: monospace;
+
+}/*it is group selectors*/
+
+.abc;{
+	background-color: hotpink;
+	color: ghostwhite;
+
+}
+

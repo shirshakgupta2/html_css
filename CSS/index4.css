@@ -1,0 +1,43 @@
+/*colour the order list*/
+ol{
+	background-color: Orange;
+}
+
+
+/*color all the unordered list*/
+ul{
+	background-color: teal;
+
+}
+
+
+/*color all li except first li inside ul*/
+.first~li{/*all the general sibing s of .first class or say the elemet that is entered first*/
+	color: blue;
+}
+
+.first{
+	color: red;
+}
+
+/*color only the second li in ul*/
+.first+li{/*adjacent sibling of .first class  if it is li  element then change the color */
+	color: ghostwhite;
+}
+
+
+/*color all li after the second li in ul*/
+.first + li ~ li{
+	font-family: monospace;
+}
+
+/*color only first ul*/
+ol+h2+ul{
+	background-color: cyan;
+}
+
+/*color only the first two li in every ul*/
+.first,.first+li{
+	background-color: lightgreen;
+}
+

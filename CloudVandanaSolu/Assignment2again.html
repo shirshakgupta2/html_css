@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sentence and Letter</title>
+</head>
+<body>
+	<h2>Enter a Sentence:</h2>
+	<input type="text" name="sentence" id="sentence">
+	<h2>Enter a Letter:</h2>
+	<input type="text" name="letter" id="letter" maxlength="1">
+	<button onclick="getSubstring()">Submit</button>
+	<p id="result"></p>
+	<script>
+		function getSubstring() {
+			let sentence = document.getElementById("sentence").value;
+			let letter = document.getElementById("letter").value;
+			if (sentence.indexOf(letter) == -1) {
+				document.getElementById("result").innerHTML = "The letter does not exist in the sentence.";
+			} else {
+				let startIndex = sentence.indexOf(letter) + 1;
+				let result = sentence.substring(startIndex);
+				document.getElementById("result").innerHTML = result;
+			}
+		}
+	</script>
+</body>
+</html>

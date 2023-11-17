@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Table & Buttons</title>
+  </head>
+  <body>
+    <table border="1">
+      <tr>
+        <th>SL.No.</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>City</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>John</td>
+        <td>Doe</td>
+        <td>New York</td>
+        <td>USA</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Jane</td>
+        <td>Doe</td>
+        <td>London</td>
+        <td>UK</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Bob</td>
+        <td>Smith</td>
+        <td>Paris</td>
+        <td>France</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Alice</td>
+        <td>Smith</td>
+        <td>Berlin</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Alex</td>
+        <td>Johnson</td>
+        <td>Rome</td>
+        <td>Italy</td>
+      </tr>
+    </table>
+    <br>
+    <button onclick="addRowBottom()">Add row to bottom</button>
+    <button onclick="addRowTop()">Add row to top</button>
+    <script>
+      function addRowBottom() {
+        var table = document.getElementsByTagName("table")[0];
+        var row = table.insertRow(-1);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        var cell3 = row.insertCell(2);
+        var cell4 = row.insertCell(3);
+        var cell5 = row.insertCell(4);
+        cell1.innerHTML = table.rows.length - 1;
+        cell2.innerHTML = "New";
+        cell3.innerHTML = "Name";
+        cell4.innerHTML = "New City";
+        cell5.innerHTML = "New Country";
+      }
+      function addRowTop() {
+        var table = document.getElementsByTagName("table")[0];
+        var row = table.insertRow(1);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        var cell3 = row.insertCell(2);
+        var cell4 = row.insertCell(3);
+        var cell5 = row.insertCell(4);
+        cell1.innerHTML = table.rows.length - 1;
+        cell2.innerHTML = "New";
+        cell3.innerHTML = "Name";
+        cell4.innerHTML = "New City";
+        cell5.innerHTML = "New Country";
+      }
+    </script>
+  </body>
+
+</html>

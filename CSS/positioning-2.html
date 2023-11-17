@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exmp</title>
+	<style type="text/css">
+		.parent{
+			/*display: inline-block;*/
+			background-color: grey;
+			border: 2px dotted black;
+
+		}
+
+		div.parent div{
+			display: inline-block;
+			height: 200px;
+			width: 300px;
+			background-color: red;
+			text-align: center;
+			margin: 5px;
+		} 
+		#two{
+			background-color: teal;
+			position: absolute;
+			top: 50px;
+			left: 150px;
+
+		}
+		#three{
+			background-color: cornflowerblue;
+			position: relative;
+			top: 30px;
+			left: 150px;
+		}
+	</style>
+</head>
+<body>
+	<div   style="padding: 20px; position: fixed; top: 60px ;right: 120px;">
+		<div class="parent" >
+			<div class="firstd" id="1">
+				first
+			</div>
+			<div class="secondd" id="two">
+				second
+			</div>
+			<div class="thirdd" id="three">
+				third
+			</div>
+			<div class="fourthd" id="4">
+				fourth
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
